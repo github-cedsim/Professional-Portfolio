@@ -1,0 +1,280 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(54, 50, 50); 
+    background-color: #fff; 
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+}
+
+/* Navbar Header Styling */
+.navbar h1 {
+    display: flex;
+    margin: 10px;
+    font-size: 35px;
+    background-color: aqua;
+    color: rgb(54, 50, 50); 
+    padding: 5px 10px 5px 30px;
+}
+
+/* Header Section Styling */
+.header {
+    position: relative;
+    background-image: url(./Assets/banner-colors.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+/* Header H2 Styling */
+.header .banner-text h2 {
+    background-color: aqua;
+    padding: 15px 5px;
+    color: rgb(54, 50, 50);
+}
+
+/* Text inside Header */
+.header .banner-text {
+    display: flex;
+    font-size: 15px;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+}
+
+/* Image Wrapper Inside Header */
+.header .img-wrapper {
+    width: 180px;
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+}
+
+/* Navbar Styling */
+.navbar {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(54, 50, 50);
+    color: #fff;
+}
+
+/* Unordered List Styling */
+ul {
+    display: flex;
+    margin-right: 15px;
+}
+
+/* List Item Styling */
+li {
+    margin: 10px;
+}
+
+/* Anchor Link Styling */
+a {
+    color: aqua;
+}
+
+/* Sidebar Section Styling */
+.sidebar {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 20px 0;
+}
+
+/* Paragraphs in Sidebar */
+.sidebar p {
+    margin-bottom: 20px;
+}
+
+/* About Me Section */
+.sidebar-about {
+    border-right: 3px solid black;
+    margin-right: 30px;
+    width: 20%;
+    top: 50px;
+}
+
+.sidebar-about-desc {
+    width: 60%;
+}
+
+.sidebar-about h2 {
+    font-size: 40px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.sidebar-about h2 span {
+    display: block;
+}
+
+/* Projects Gallery Styling */
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Individual Project Styling */
+.project {
+    width: calc(100% / 2 - 22px);
+    padding: 0;
+    position: relative;
+    border: 1px solid aqua;
+    margin: 10px 10px 20px;
+}
+
+/* Project Description Styling */
+.project-desc {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.project-desc h2 {
+    margin-bottom: 5px;
+}
+
+/* Full Width Project Styling */
+.project.w-100 {
+    width: 100%;
+}
+
+/* Image Wrapper in Project */
+.project .img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    border: 5px solid aqua;
+}
+
+.project.w-100 .img-wrapper {
+    height: 300px;
+}
+
+.project .img-wrapper img {
+    height: 100%;
+    opacity: 0.9;
+}
+
+/* Image Hover Effect */
+.project .img-wrapper img:hover {
+    opacity: 1;
+}
+
+/* Contact Links Styling */
+.contact-links  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+div.contact-links a {
+    color: #222;
+    font-size: 16px;
+}
+
+/* Media Queries for Mobile and Tablet Responsive Design */
+@media screen and (max-width:768px) {
+    .project-desc h2 {
+        font-size: 18px;
+    }
+
+    .sidebar-about h2 {
+        font-size: 28px;
+    }
+
+    .project-desc span {
+        font-size: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .header .banner-text {
+        bottom: 30px;
+    }
+
+    .sidebar-about {
+        width: 25%;
+    }
+
+    .sidebar-about-desc {
+        width: 65%;
+    }
+
+    .contact-links {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:605px) {
+    .header .img-wrapper {
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .header .banner-text {
+        display: block;
+        text-align: center;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        bottom: 10px;
+    }
+
+    .header .banner-text h2 {
+        text-align: center;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .sidebar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sidebar-about {
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+
+    .sidebar-about h2 {
+        text-align: center;
+        margin: 0 0 10px;
+    }
+
+    .sidebar-about h2 span {
+        display: inline;
+    }
+
+    .sidebar-about-desc {
+        width: 96%;
+    }
+}
