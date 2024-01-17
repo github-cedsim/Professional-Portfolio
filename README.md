@@ -3,4 +3,4 @@ This is a professional portfolio webpage for Cedric Simpkins the purpose is to s
 
 Application URL: https://cedric-simpkins.github.io/Professional-Portfolio/.
 
-[Visual Screenshot: image](https://user-images.githubusercontent.com/126218396/230809890-74915aed-8605-47ef-bc0f-edc3db58c5d8.png)https://user-images.githubusercontent.com/126218396/230809890-74915aed-8605-47ef-bc0f-edc3db58c5d8.png
+[Visual Screenshot: ![image](https://github.com/github-cedsim/Professional-Portfolio/assets/126218396/1dd6c39c-0930-4b9f-9c9d-6ab3243405e2)
